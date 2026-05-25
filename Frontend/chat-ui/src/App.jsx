@@ -30,7 +30,7 @@ function App() {
     setSocket(ws);
 
     return () => ws.close();
-  }, [joined] ,[messages]);
+  }, [joined]);
 
   function sendMessage() {
     if (socket && text.trim() !== "") {
