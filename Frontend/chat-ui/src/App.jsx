@@ -11,7 +11,7 @@ function App() {
   useEffect(() => {
     if (!joined) return;
 
-    const ws = new WebSocket("ws://localhost:8000/ws");
+    const ws = new WebSocket("wss://chat-backend-t8m9.onrender.com/ws");
 
     ws.onopen = () => {
       console.log("Connected");
